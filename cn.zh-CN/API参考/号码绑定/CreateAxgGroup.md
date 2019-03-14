@@ -1,4 +1,4 @@
-# CreateAxgGroup {#doc_api_1039832 .reference}
+# CreateAxgGroup {#doc_api_1058879 .reference}
 
 调用接口CreateAxgGroup创建G号码组。
 
@@ -40,7 +40,7 @@
 |Code|String|OK|请求状态码。
 
  -   返回OK代表请求成功。
--   其他错误码详见[错误码列表](~~101346~~)。
+-   其他错误码详见[错误码列表](~~109196~~)。
 
  |
 |GroupId|Long|2000000000001|新建的G号码组的ID，即GID。通过接口BindAXG绑定号码时需要输入此参数。
