@@ -1,4 +1,4 @@
-# BuySecretNo {#doc_api_1039830 .reference}
+# BuySecretNo {#doc_api_1058883 .reference}
 
 调用BuySecretNo接口购买号码。
 
