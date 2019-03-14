@@ -1,4 +1,4 @@
-# BindAxn {#doc_api_1050915 .reference}
+# BindAxn {#doc_api_1058880 .reference}
 
 调用接口BindAxn添加AXN号码的绑定关系。
 
@@ -68,7 +68,7 @@ AXN隐私号是为A号码分配一个专属的隐私号，任何号码N通过拨
 |Code|String|OK|请求状态码。
 
  -   返回OK代表请求成功。
--   其他错误码详见[错误码列表](~~101346~~)。
+-   其他错误码详见[错误码列表](~~109196~~)。
 
  |
 |Message|String|OK|状态码的描述。
