@@ -1,4 +1,4 @@
-# OperateAxgGroup {#doc_api_1039833 .reference}
+# OperateAxgGroup {#doc_api_1058878 .reference}
 
 调用接口OperateAxgGroup修改G号码组。
 
@@ -49,7 +49,7 @@
 |Code|String|OK|请求状态码。
 
  -   返回OK代表请求成功。
--   其他错误码详见[错误码列表](~~101346~~)。
+-   其他错误码详见[错误码列表](~~109196~~)。
 
  |
 |Message|String|OK|状态码的描述。
