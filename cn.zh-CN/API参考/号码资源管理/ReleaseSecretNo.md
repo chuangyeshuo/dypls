@@ -1,4 +1,4 @@
-# ReleaseSecretNo {#doc_api_1039841 .reference}
+# ReleaseSecretNo {#doc_api_1058877 .reference}
 
 调用接口ReleaseSecretNo释放号码。
 
