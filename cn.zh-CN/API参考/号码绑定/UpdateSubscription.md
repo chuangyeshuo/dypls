@@ -1,4 +1,4 @@
-# UpdateSubscription {#doc_api_1039852 .reference}
+# UpdateSubscription {#doc_api_1058887 .reference}
 
 调用接口UpdateSubscription修改绑定关系。
 
@@ -72,7 +72,7 @@
 |Code|String|OK|请求状态码。
 
  -   返回OK代表请求成功。
--   其他错误码详见[错误码列表](~~101346~~)。
+-   其他错误码详见[错误码列表](~~109196~~)。
 
  |
 |Message|String|OK|状态码的描述。
