@@ -1,4 +1,4 @@
-# BindAxnExtension {#doc_api_1050927 .reference}
+# BindAxnExtension {#doc_api_1058886 .reference}
 
 调用接口BindAxnExtension添加AXN分机号码的绑定关系。
 
@@ -68,7 +68,7 @@
 |Code|String|OK|请求状态码。
 
  -   返回OK代表请求成功。
--   其他错误码详见[错误码列表](~~101346~~)。
+-   其他错误码详见[错误码列表](~~109196~~)。
 
  |
 |Message|String|OK|状态码的描述。
