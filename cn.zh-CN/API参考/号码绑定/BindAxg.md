@@ -1,4 +1,4 @@
-# BindAxg {#doc_api_1039851 .reference}
+# BindAxg {#doc_api_1058885 .reference}
 
 调用接口BindAxg添加AXG号码的绑定关系。
 
@@ -75,7 +75,7 @@ AXG隐私号是针对有用户分级需求、限制呼叫范围、限制抢单�
 |Code|String|OK|请求状态码。
 
  -   返回OK代表请求成功。
--   其他错误码详见[错误码列表](~~101346~~)。
+-   其他错误码详见[错误码列表](~~109196~~)。
 
  |
 |Message|String|OK|状态码的描述。
