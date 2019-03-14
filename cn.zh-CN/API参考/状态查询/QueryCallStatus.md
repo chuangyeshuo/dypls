@@ -1,4 +1,4 @@
-# QueryCallStatus {#doc_api_1039837 .reference}
+# QueryCallStatus {#doc_api_1058888 .reference}
 
 调用接口QueryCallStatus查询呼叫状态。
 
@@ -39,7 +39,7 @@
 |Code|String|OK|请求状态码。
 
  -   返回OK代表请求成功。
--   其他错误码详见[错误码列表](~~101346~~)。
+-   其他错误码详见[错误码列表](~~109196~~)。
 
  |
 |Message|String|OK|状态码的描述。
