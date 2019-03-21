@@ -1,4 +1,4 @@
-# QuerySubscriptionDetail {#doc_api_1058884 .reference}
+# QuerySubscriptionDetail {#doc_api_1102517 .reference}
 
 调用接口QuerySubscriptionDetail查询号码的绑定关系。
 
@@ -20,8 +20,6 @@
 
  |
 |PoolKey|String|是|FC123456|号码池Key。请登录[号码隐私保护控制台](https://dypls.console.aliyun.com/dypls.htm#/account)，在**号码池管理**中查看号码池Key。
-
- **说明：** PoolKey为必填参数。
 
  |
 |SubsId|String|是|1000000768798832|绑定关系ID。
@@ -49,7 +47,7 @@
 |RequestId|String|066E6E47-04CB-4774-A976-4F73CB76D4A3|请求ID。
 
  |
-|SecretBindDetailDTO| | |绑定成功后返回的结构体。
+|SecretBindDetailDTO| | |接口调用成功后返回的结构体。
 
  |
 |└CallRestrict|String|CONTROL\_BX\_DISABLE|单通呼叫限制的状态。如果没有设置单通呼叫限制，则不返回该参数。
