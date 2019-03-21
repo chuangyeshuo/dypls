@@ -1,4 +1,4 @@
-# BindAxg {#doc_api_1058885 .reference}
+# BindAxg {#doc_api_1102515 .reference}
 
 调用接口BindAxg添加AXG号码的绑定关系。
 
@@ -28,6 +28,9 @@ AXG隐私号是针对有用户分级需求、限制呼叫范围、限制抢单�
 |PhoneNoA|String|是|15000000000|AXG中的A号码。
 
  A号码可设置为手机号码或固定电话，固定电话需要加区号，区号和号码中间不需要加连字符，例如057188992688。
+
+ |
+|PoolKey|String|是|FC123456|号码池Key。请登录[号码隐私保护控制台](https://dypls.console.aliyun.com/dypls.htm#/account)，在**号码池管理**中查看号码池Key。
 
  |
 |AccessKeyId|String|否|LTAIP00vvvvvvvvv|主账号AccessKey的ID。
@@ -60,11 +63,6 @@ AXG隐私号是针对有用户分级需求、限制呼叫范围、限制抢单�
 |PhoneNoX|String|否|17000000000|AXG中的X号码。未指定X号码时，将根据参数**ExpectCity**从指定号码池中随机指定一个号码作为X号码。
 
  X号码是您绑定号码前在控制台或通过接口**BuySecretNo**购买的电话号码，用于转接电话。
-
- |
-|PoolKey|String|否|FC123456|号码池Key。请登录[号码隐私保护控制台](https://dypls.console.aliyun.com/dypls.htm#/account)，在**号码池管理**中查看号码池Key。
-
- **说明：** PoolKey为必填参数。
 
  |
 
