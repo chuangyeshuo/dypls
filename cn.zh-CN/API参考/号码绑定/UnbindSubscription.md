@@ -1,4 +1,4 @@
-# UnbindSubscription {#doc_api_1058882 .reference}
+# UnbindSubscription {#doc_api_1102514 .reference}
 
 调用接口UnbindSubscription解除号码的绑定关系。
 
@@ -12,6 +12,9 @@
 
 |名称|类型|是否必选|示例值|描述|
 |--|--|----|---|--|
+|PoolKey|String|是|FC123456|号码池Key。请登录[号码隐私保护控制台](https://dypls.console.aliyun.com/dypls.htm#/account)，在**号码池管理**中查看号码池Key。
+
+ |
 |SecretNo|String|是|17000000000|隐私号码。调用BindAXG等号码绑定接口时指定或自动分配的X号码。
 
  |
@@ -24,11 +27,6 @@
 
  |
 |Action|String|否|UnbindSubscription|系统规定参数。取值：**UnbindSubscription**。
-
- |
-|PoolKey|String|否|FC123456|号码池Key。请登录[号码隐私保护控制台](https://dypls.console.aliyun.com/dypls.htm#/account)，在**号码池管理**中查看号码池Key。
-
- **说明：** PoolKey为必填参数。
 
  |
 |ProductType|String|否|AXB\_170|废弃参数。
