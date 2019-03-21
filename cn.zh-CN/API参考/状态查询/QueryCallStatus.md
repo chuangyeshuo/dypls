@@ -1,4 +1,4 @@
-# QueryCallStatus {#doc_api_1058888 .reference}
+# QueryCallStatus {#doc_api_1102519 .reference}
 
 调用接口QueryCallStatus查询呼叫状态。
 
@@ -12,6 +12,9 @@
 
 |名称|类型|是否必选|示例值|描述|
 |--|--|----|---|--|
+|PoolKey|String|是|FC123456|号码池Key。请登录[号码隐私保护控制台](https://dypls.console.aliyun.com/dypls.htm#/account)，在**号码池管理**中查看号码池Key。
+
+ |
 |SubsId|String|是|1000000768798832|绑定关系ID。
 
  可以在控制台的**号码管理** \> **号码详情**中查看绑定关系ID，或者在调用BindAxb等号码绑定API时查看返回参数中的**SubsId**。
@@ -24,11 +27,6 @@
 
  |
 |CallNo|String|否|150000000|主叫号码。
-
- |
-|PoolKey|String|否|FC123456|号码池Key。请登录[号码隐私保护控制台](https://dypls.console.aliyun.com/dypls.htm#/account)，在**号码池管理**中查看号码池Key。
-
- **说明：** PoolKey为必填参数。
 
  |
 
@@ -48,7 +46,7 @@
 |RequestId|String|E7F99446-8191-43C0-99B5-F58A6AEAD7D5|请求ID。
 
  |
-|SecretCallStatusDTO| | |绑定成功后返回的结构体。
+|SecretCallStatusDTO| | |接口调用成功后返回的结构体。
 
  |
 |└CalledNo|String|17000000000|被叫的号码，即X号码。
