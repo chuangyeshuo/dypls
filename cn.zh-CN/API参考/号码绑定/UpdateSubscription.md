@@ -1,4 +1,4 @@
-# UpdateSubscription {#doc_api_1058887 .reference}
+# UpdateSubscription {#doc_api_1102518 .reference}
 
 调用接口UpdateSubscription修改绑定关系。
 
@@ -22,6 +22,9 @@
 
  |
 |PhoneNoX|String|是|15000000000|号码绑定关系中的X号码。
+
+ |
+|PoolKey|String|是|FC123456|号码池Key。请登录[号码隐私保护控制台](https://dypls.console.aliyun.com/dypls.htm#/account)，在**号码池管理**中查看号码池Key。
 
  |
 |SubsId|String|是|1000000768798832|绑定关系ID。
@@ -54,11 +57,6 @@
 
  |
 |PhoneNoB|String|否|150000001|设置绑定关系中的B号码，当**OperateType**指定为**updateNoB**时必填。
-
- |
-|PoolKey|String|否|FC123456|号码池Key。请登录[号码隐私保护控制台](https://dypls.console.aliyun.com/dypls.htm#/account)，在**号码池管理**中查看号码池Key。
-
- **说明：** PoolKey为必填参数。
 
  |
 |ProductType|String|否|AXB\_170|废弃参数。
