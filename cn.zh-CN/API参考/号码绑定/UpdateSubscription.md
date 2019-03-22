@@ -1,4 +1,4 @@
-# UpdateSubscription {#doc_api_1102518 .reference}
+# UpdateSubscription {#doc_api_1104787 .reference}
 
 调用接口UpdateSubscription修改绑定关系。
 
@@ -59,7 +59,9 @@
 |PhoneNoB|String|否|150000001|设置绑定关系中的B号码，当**OperateType**指定为**updateNoB**时必填。
 
  |
-|ProductType|String|否|AXB\_170|废弃参数。
+|ProductType|String|否|AXB\_170|产品类型。
+
+ **说明：** 适用于原阿里大于客户，阿里云用户可忽略。
 
  |
 
