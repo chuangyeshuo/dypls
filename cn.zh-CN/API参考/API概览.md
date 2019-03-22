@@ -8,35 +8,35 @@
 
 |API|描述|
 |:--|:-|
-|[BindAxb](cn.zh-CN/API参考/号码绑定/BindAxb.md)|添加AXB号码的绑定关系。|
-|[BindAxn](cn.zh-CN/API参考/号码绑定/BindAxn.md)|添加AXN号码的绑定关系。|
-|[BindAxnExtension](cn.zh-CN/API参考/号码绑定/BindAxnExtension.md)|添加AXN分机号码的绑定关系。|
-|[BindAxg](cn.zh-CN/API参考/号码绑定/BindAxg.md)|添加AXG号码的绑定关系。|
-|[CreateAxgGroup](cn.zh-CN/API参考/号码绑定/CreateAxgGroup.md)|创建G号码组。|
-|[OperateAxgGroup](cn.zh-CN/API参考/号码绑定/OperateAxgGroup.md)|修改G号码组。|
-|[UpdateSubscription](cn.zh-CN/API参考/号码绑定/UpdateSubscription.md)|修改绑定关系。|
-|[UnbindSubscription](cn.zh-CN/API参考/号码绑定/UnbindSubscription.md)|解除号码的绑定关系。|
+|[BindAxb](~~109393~~)|添加AXB号码的绑定关系。|
+|[BindAxn](~~109401~~)|添加AXN号码的绑定关系。|
+|[BindAxnExtension](~~109402~~)|添加AXN分机号码的绑定关系。|
+|[BindAxg](~~109399~~)|添加AXG号码的绑定关系。|
+|[CreateAxgGroup](~~109406~~)|创建G号码组。|
+|[OperateAxgGroup](~~109407~~)|修改G号码组。|
+|[UpdateSubscription](~~109418~~)|修改绑定关系。|
+|[UnbindSubscription](~~109417~~)|解除号码的绑定关系。|
 
 ## 状态查询 {#section_ktk_xcs_ggb .section}
 
 |API|描述|
 |:--|:-|
-|[QueryCallStatus](cn.zh-CN/API参考/状态查询/QueryCallStatus.md)|查询呼叫状态。|
-|[QuerySubscriptionDetail](cn.zh-CN/API参考/状态查询/QuerySubscriptionDetail.md)|查询号码的绑定关系。|
+|[QueryCallStatus](~~109410~~)|查询呼叫状态。|
+|[QuerySubscriptionDetail](~~109415~~)|查询号码的绑定关系。|
 
 ## 录音文件 {#section_uzn_2kk_zgb .section}
 
 |API|描述|
 |:--|:-|
-|[QueryRecordFileDownloadUrl](cn.zh-CN/API参考/录音文件/QueryRecordFileDownloadUrl.md)|获取录音文件的下载链接。|
+|[QueryRecordFileDownloadUrl](~~109413~~)|获取录音文件的下载链接。|
 
 ## 号码资源管理 {#section_kh2_hkk_zgb .section}
 
 |API|描述|
 |:--|:-|
-|[QuerySecretNoRemain](cn.zh-CN/API参考/号码资源管理/QuerySecretNoRemain.md)|查询线上可购号码余量。|
-|[BuySecretNo](cn.zh-CN/API参考/号码资源管理/BuySecretNo.md)|购买号码。|
-|[ReleaseSecretNo](cn.zh-CN/API参考/号码资源管理/ReleaseSecretNo.md)|释放号码。|
+|[QuerySecretNoRemain](~~111641~~)|查询线上可购号码余量。|
+|[BuySecretNo](~~109405~~)|购买号码。|
+|[ReleaseSecretNo](~~109416~~)|释放号码。|
 
 ## 回执消息 {#section_z1s_xcs_ggb .section}
 
