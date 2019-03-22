@@ -1,4 +1,4 @@
-# QueryRecordFileDownloadUrl {#doc_api_1058881 .reference}
+# QueryRecordFileDownloadUrl {#doc_api_1107749 .reference}
 
 调用接口QueryRecordFileDownloadUrl获取录音文件的下载链接。
 
@@ -22,23 +22,21 @@
  请登录[号码隐私保护控制台](https://dypls.console.aliyun.com/dypls.htm#/account)，在**呼叫记录查询**中查看**呼叫记录ID**。
 
  |
+|CallTime|String|是|2019-03-05 12:00:00|呼叫记录中的呼叫发起时间。请登录[号码隐私保护控制台](https://dypls.console.aliyun.com/dypls.htm#/account)，在**呼叫记录查询**中查看**呼叫发起时间**，或者在话单回执消息中查看call\_time字段。
+
+ |
+|PoolKey|String|是|FC123456|号码池Key。请登录[号码隐私保护控制台](https://dypls.console.aliyun.com/dypls.htm#/account)，在**号码池管理**中查看号码池Key。
+
+ |
 |AccessKeyId|String|否|LTAIP00vvvvvvvvv|主账号AccessKey的ID。
 
  |
 |Action|String|否|QueryRecordFileDownloadUrl|系统规定参数。取值：**QueryRecordFileDownloadUrl**。
 
  |
-|CallTime|String|否|2019-03-05 12:00:00|呼叫记录中的呼叫发起时间。请登录[号码隐私保护控制台](https://dypls.console.aliyun.com/dypls.htm#/account)，在**呼叫记录查询**中查看**呼叫发起时间**，或者在话单回执消息中查看call\_time字段。
+|ProductType|String|否|AXB\_170|产品类型。
 
- **说明：** CallTime为必填参数。
-
- |
-|PoolKey|String|否|FC123456|号码池Key。请登录[号码隐私保护控制台](https://dypls.console.aliyun.com/dypls.htm#/account)，在**号码池管理**中查看号码池Key。
-
- **说明：** PoolKey为必填参数。
-
- |
-|ProductType|String|否|AXB\_170|废弃字段，无须关注。
+ **说明：** 适用于原阿里大于客户，阿里云用户可忽略。
 
  |
 
@@ -70,6 +68,7 @@
 
 http(s)://[Endpoint]/?CallId=abcedf1234
 &PoolKey=FC123456
+&CallTime=2019-03-05 12:00:00
 &<公共请求参数>
 
 ```
