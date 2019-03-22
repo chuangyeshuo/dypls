@@ -1,4 +1,4 @@
-# UnbindSubscription {#doc_api_1102514 .reference}
+# UnbindSubscription {#doc_api_1104785 .reference}
 
 调用接口UnbindSubscription解除号码的绑定关系。
 
@@ -29,7 +29,9 @@
 |Action|String|否|UnbindSubscription|系统规定参数。取值：**UnbindSubscription**。
 
  |
-|ProductType|String|否|AXB\_170|废弃参数。
+|ProductType|String|否|AXB\_170|产品类型。
+
+ **说明：** 适用于原阿里大于客户，阿里云用户可忽略。
 
  |
 
