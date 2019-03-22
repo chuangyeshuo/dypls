@@ -1,4 +1,4 @@
-# QuerySubscriptionDetail {#doc_api_1102517 .reference}
+# QuerySubscriptionDetail {#doc_api_1104786 .reference}
 
 调用接口QuerySubscriptionDetail查询号码的绑定关系。
 
@@ -27,7 +27,9 @@
  可以在控制台的**号码管理** \> **号码详情**中查看绑定关系ID，或者在调用BindAxb等号码绑定API时查看返回参数中的**SubsId**。
 
  |
-|ProductType|String|否|AXB\_170|废弃参数。
+|ProductType|String|否|AXB\_170|产品类型。
+
+ **说明：** 适用于原阿里大于客户，阿里云用户可忽略。
 
  |
 
