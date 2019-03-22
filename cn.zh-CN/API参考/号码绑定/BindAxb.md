@@ -1,4 +1,4 @@
-# BindAxb {#doc_api_1058874 .reference}
+# BindAxb {#doc_api_1107750 .reference}
 
 调用接口BindAxb添加AXB号码的绑定关系。
 
@@ -18,6 +18,14 @@
 |PhoneNoA|String|是|15000000000|AXB中的A号码。
 
  A号码可设置为手机号码或固定电话，固定电话需要加区号，区号和号码中间不需要加连字符，例如057188992688。
+
+ |
+|PhoneNoB|String|是|15000000001|AXB中的B号码，A号码拨打X号码时会转接到B号码，可通过接口**UpdateSubscription**更新B号码。
+
+ B号码可设置为手机号码或固定电话，固定电话需要加区号，区号和号码中间不需要加连字符，例如057188992688。
+
+ |
+|PoolKey|String|是|FC123456|号码池Key。请登录[号码隐私保护控制台](https://dypls.console.aliyun.com/dypls.htm#/account)，在**号码池管理**中查看号码池Key。
 
  |
 |AccessKeyId|String|否|LTAIP00vvvvvvvvv|主账号AccessKey的ID。
@@ -42,21 +50,9 @@
 |OutOrderId|String|否|abcdef|外部业务ID，通话记录回执消息中会回传此参数。
 
  |
-|PhoneNoB|String|否|15000000001|AXB中的B号码，A号码拨打X号码时会转接到B号码，可通过接口**UpdateSubscription**更新B号码。
-
- B号码可设置为手机号码或固定电话，固定电话需要加区号，区号和号码中间不需要加连字符，例如057188992688。
-
- **说明：** PhoneNoB为必填参数。
-
- |
 |PhoneNoX|String|否|17000000000|AXG中的X号码。未指定X号码时，将根据参数**ExpectCity**从指定号码池中随机指定一个号码作为X号码。
 
  X号码是您绑定号码前在控制台或通过接口**BuySecretNo**购买的电话号码，用于转接电话。
-
- |
-|PoolKey|String|否|FC123456|号码池Key。请登录[号码隐私保护控制台](https://dypls.console.aliyun.com/dypls.htm#/account)，在**号码池管理**中查看号码池Key。
-
- **说明：** PoolKey为必填参数。
 
  |
 
