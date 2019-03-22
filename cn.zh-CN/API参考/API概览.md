@@ -34,6 +34,7 @@
 
 |API|描述|
 |:--|:-|
+|[QuerySecretNoRemain](cn.zh-CN/API参考/号码资源管理/QuerySecretNoRemain.md)|查询线上可购号码余量。|
 |[BuySecretNo](cn.zh-CN/API参考/号码资源管理/BuySecretNo.md)|购买号码。|
 |[ReleaseSecretNo](cn.zh-CN/API参考/号码资源管理/ReleaseSecretNo.md)|释放号码。|
 
