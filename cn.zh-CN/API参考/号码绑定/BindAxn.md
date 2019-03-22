@@ -1,4 +1,4 @@
-# BindAxn {#doc_api_1102512 .reference}
+# BindAxn {#doc_api_1104784 .reference}
 
 调用接口BindAxn添加AXN号码的绑定关系。
 
@@ -39,7 +39,9 @@ AXN隐私号是为A号码分配一个专属的隐私号，任何号码N通过拨
 |IsRecordingEnabled|Boolean|否|true|是否需要针对该绑定关系产生的所有通话录制通话录音。
 
  |
-|NoType|String|否|AXB\_170|废弃字段，无需填写。
+|NoType|String|否|AXB\_170|号码类型。
+
+ **说明：** 适用于原阿里大于客户，阿里云用户可忽略。
 
  |
 |OutId|String|否|abcdef|外部业务扩展字段。
