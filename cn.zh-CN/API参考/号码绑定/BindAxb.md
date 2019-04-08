@@ -1,4 +1,4 @@
-# BindAxb {#doc_api_1107750 .reference}
+# BindAxb {#doc_api_Dyplsapi_BindAxb .reference}
 
 调用接口BindAxb添加AXB号码的绑定关系。
 
@@ -50,7 +50,7 @@
 |OutOrderId|String|否|abcdef|外部业务ID，通话记录回执消息中会回传此参数。
 
  |
-|PhoneNoX|String|否|17000000000|AXG中的X号码。未指定X号码时，将根据参数**ExpectCity**从指定号码池中随机指定一个号码作为X号码。
+|PhoneNoX|String|否|17000000000|AXB中的X号码。未指定X号码时，将根据参数**ExpectCity**从指定号码池中随机指定一个号码作为X号码。
 
  X号码是您绑定号码前在控制台或通过接口**BuySecretNo**购买的电话号码，用于转接电话。
 
