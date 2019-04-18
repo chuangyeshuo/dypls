@@ -1,4 +1,4 @@
-# BindAxg {#doc_api_1102515 .reference}
+# BindAxg {#doc_api_Dyplsapi_BindAxg .reference}
 
 调用接口BindAxg添加AXG号码的绑定关系。
 
@@ -49,10 +49,10 @@ AXG隐私号是针对有用户分级需求、限制呼叫范围、限制抢单�
 |IsRecordingEnabled|Boolean|否|true|是否需要针对该绑定关系产生的所有通话录制通话录音。
 
  |
-|OutId|String|否|abcdef|外部业务扩展字段。
+|OutId|String|否|abcdef|外部业务扩展字段，通话记录回执消息中会回传此参数。
 
  |
-|OutOrderId|String|否|abcdef|外部业务ID，通话记录回执消息中会回传此参数。
+|OutOrderId|String|否|abcdef|外部业务ID。
 
  |
 |PhoneNoB|String|否|15000000001|AXG中的B号码，A号码拨打X号码时会转接到B号码，可通过接口**UpdateSubscription**更新B号码。
