@@ -1,4 +1,4 @@
-# BindAxnExtension {#doc_api_1102516 .reference}
+# BindAxnExtension {#doc_api_Dyplsapi_BindAxnExtension .reference}
 
 调用接口BindAxnExtension添加AXN分机号码的绑定关系。
 
@@ -42,10 +42,10 @@
 |IsRecordingEnabled|Boolean|否|true|是否需要针对该绑定关系产生的所有通话录制通话录音。
 
  |
-|OutId|String|否|abcdef|外部业务扩展字段。
+|OutId|String|否|abcdef|外部业务扩展字段，通话记录回执消息中会回传此参数。
 
  |
-|OutOrderId|String|否|abcdef|外部业务ID，通话记录回执消息中会回传此参数。
+|OutOrderId|String|否|abcdef|外部业务ID。
 
  |
 |PhoneNoB|String|否|15000000001|AXN中的B号码，A号码拨打X号码时会转接到B号码，可通过接口**UpdateSubscription**更新B号码。
