@@ -1,4 +1,4 @@
-# BindAxn {#doc_api_1104784 .reference}
+# BindAxn {#doc_api_Dyplsapi_BindAxn .reference}
 
 调用接口BindAxn添加AXN号码的绑定关系。
 
@@ -44,10 +44,10 @@ AXN隐私号是为A号码分配一个专属的隐私号，任何号码N通过拨
  **说明：** 适用于原阿里大于客户，阿里云用户可忽略。
 
  |
-|OutId|String|否|abcdef|外部业务扩展字段。
+|OutId|String|否|abcdef|外部业务扩展字段，通话记录回执消息中会回传此参数。
 
  |
-|OutOrderId|String|否|abcdef|外部业务ID，通话记录回执消息中会回传此参数。
+|OutOrderId|String|否|abcdef|外部业务ID。
 
  |
 |PhoneNoB|String|否|13100000000|AXN中的B号码，A号码拨打X号码时会转接到B号码，可通过接口**UpdateSubscription**更新B号码。
