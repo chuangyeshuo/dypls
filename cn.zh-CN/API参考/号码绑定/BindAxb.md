@@ -44,10 +44,10 @@
 |IsRecordingEnabled|Boolean|否|true|是否需要针对该绑定关系产生的所有通话录制通话录音。
 
  |
-|OutId|String|否|abcdef|外部业务扩展字段。
+|OutId|String|否|abcdef|外部业务扩展字段，通话记录回执消息中会回传此参数。
 
  |
-|OutOrderId|String|否|abcdef|外部业务ID，通话记录回执消息中会回传此参数。
+|OutOrderId|String|否|abcdef|外部业务ID。
 
  |
 |PhoneNoX|String|否|17000000000|AXB中的X号码。未指定X号码时，将根据参数**ExpectCity**从指定号码池中随机指定一个号码作为X号码。
