@@ -17,8 +17,8 @@
 
 -   [呼叫发起时话单报告（SecretStartReport）](cn.zh-CN/API参考/消息回执/SecretStartReport.md)
 -   [呼叫结束后话单报告（SecretReport）](cn.zh-CN/API参考/消息回执/SecretReport.md)
--   [录音状态报告（SecretSmsIntercept）](cn.zh-CN/API参考/消息回执/SecretSmsIntercept.md)
--   [短信内容报告（SecretRecording）](cn.zh-CN/API参考/消息回执/SecretRecording.md)
+-   [录音状态报告（SecretSmsIntercept）](cn.zh-CN/API参考/消息回执/SecretSmsIntercept.md#)
+-   [短信内容报告（SecretRecording）](cn.zh-CN/API参考/消息回执/SecretRecording.md#)
 
 ## 返回参数 {#section_jjx_nk5_hhb .section}
 
