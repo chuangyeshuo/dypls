@@ -16,8 +16,13 @@
 |partner\_key|String|必须|AXB归属合作伙伴KEY|123456|
 |start\_time|Date|必须|短信发送时间|“2018-01-05 12:01:00”|
 |out\_id|String|可选|外部业务ID|123456|
-|sms\_type|Number|必须|短信类型。-   1：上行
--   2：下行
+|status|Number|可选|智能短信发送状态。 -   1：发送成功。
+-   2：发送失败。
 
-|1|
+ |1|
+|sms\_sign|String|可选|智能短信签名。|号码隐私保护|
+|sms\_type|Number|必须|短信类型。 -   1：短信截取
+-   2：智能短信
+
+ |1|
 
