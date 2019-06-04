@@ -1,6 +1,6 @@
 # SecretRecording {#concept_ryv_ryj_ygb .concept}
 
-接收录音状态报告，可以获取到通话完成后的录音记录，消息内容包括录音下载的链接，便于平台进行录音管理。
+接收录音状态报告，接收到此消息即表示录音已经生成，可以根据消息内容，通过【[录音文件](https://help.aliyun.com/document_detail/110264.html)】查询接口下载相应录音文件。
 
 ## 消息体结构说明 {#section_a31_4s3_ygb .section}
 
