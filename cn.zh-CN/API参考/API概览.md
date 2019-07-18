@@ -14,8 +14,8 @@
 |[BindAxg](~~110249~~)|添加AXG号码的绑定关系。|
 |[CreateAxgGroup](~~110250~~)|创建G号码组。|
 |[OperateAxgGroup](~~110252~~)|修改G号码组。|
-|[UpdateSubscription](~~110256~~)|修改绑定关系。|
-|[UnbindSubscription](~~110253~~)|解除号码的绑定关系。|
+|[UpdateSubscription](~~110253~~)|修改绑定关系。|
+|[UnbindSubscription](~~110256~~)|解除号码的绑定关系。|
 
 ## 状态查询 {#section_ktk_xcs_ggb .section}
 
@@ -45,5 +45,5 @@
 |[SecretStartReport](cn.zh-CN/API参考/消息回执/SecretStartReport.md)|接收通话发起时的通话记录报告内容，可以在呼叫发起时立即获取到通话记录信息，包括通话开始时间、主被叫号码等，便于平台进行预判处理。|
 |[SecretReport](cn.zh-CN/API参考/消息回执/SecretReport.md)|接收通话结束时的通话记录报告内容，可以在呼叫结束后获取通话记录信息，包括通话开始时间、通话结束时间、主被叫号码等，便于平台进行管理。|
 |[SecretSmsIntercept](cn.zh-CN/API参考/消息回执/SecretSmsIntercept.md)|接收短信内容报告，可以获取到短信发送后的内容记录，包括短信发送方、接收方、发送时间等信息，便于平台进行短信管理。|
-|[SecretRecording](cn.zh-CN/API参考/消息回执/SecretRecording.md)|接收录音状态报告，可以获取到通话完成后的录音记录，消息内容包括录音下载的链接，便于平台进行录音管理。|
+|[SecretRecording](cn.zh-CN/API参考/消息回执/SecretRecording.md)|接收录音状态报告，接收到此消息即表示录音已经生成，可以根据消息内容，通过【[录音文件](https://help.aliyun.com/document_detail/110264.html)】查询接口下载相应录音文件。|
 
