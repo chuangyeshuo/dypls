@@ -1,12 +1,12 @@
-# UpdateSubscription {#doc_api_1104787 .reference}
+# UpdateSubscription {#doc_api_Dyplsapi_UpdateSubscription .reference}
 
 调用接口UpdateSubscription修改绑定关系。
 
 添加号码绑定关系后，可以通过接口**UpdateSubscription**修改绑定关系，例如修改A号码、修改B号码、修改绑定关系有效期、设置单通呼叫限制或修改G号码组。
 
-## 调试 {#apiExplorer .section}
+## 调试 {#api_explorer .section}
 
-前往【[API Explorer](https://api.aliyun.com/#product=Dyplsapi&api=UpdateSubscription)】在线调试，API Explorer 提供在线调用 API、动态生成 SDK Example 代码和快速检索接口等能力，能显著降低使用云 API 的难度，强烈推荐使用。
+[您可以在OpenAPI Explorer中直接运行该接口，免去您计算签名的困扰。运行成功后，OpenAPI Explorer可以自动生成SDK代码示例。](https://api.aliyun.com/#product=Dyplsapi&api=UpdateSubscription&type=RPC&version=2017-05-25)
 
 ## 请求参数 {#parameters .section}
 
@@ -19,6 +19,9 @@
 -   **updateExpire**：修改绑定关系有效期。
 -   **updateAxgGroup**：修改G号码组。
 -   **updateCallRestrict**：设置单通呼叫限制。
+-   **updateCallDisplayType**：更新呼叫显号逻辑。
+-   **updateOutId**：更新OutId字段。
+-   **updateIsRecordingEnabled**：更新绑定中录音状态。
 
  |
 |PhoneNoX|String|是|15000000000|号码绑定关系中的X号码。
@@ -38,6 +41,9 @@
 |Action|String|否|UpdateSubscription|系统规定参数。取值：**UpdateSubscription**。
 
  |
+|CallDisplayType|Integer|否|1|重置绑定关系中的号码显示逻辑，1：主被叫显示中间号码X；2：B/N侧号码呼叫时，给A侧号码显示B/N的真实号码；3：A侧号码呼叫时，给B/N侧号码显示真实号码。
+
+ |
 |CallRestrict|String|否|CONTROL\_BX\_DISABLE|设置单通呼叫限制，当**OperateType**指定为**updateCallRestrict**时必填。
 
  取值为：
@@ -53,6 +59,12 @@
 |GroupId|String|否|1234|设置绑定关系中的G号码组ID，当**OperateType**指定为**updateAxgGroup**时必填。
 
  |
+|IsRecordingEnabled|Boolean|否|true|重新设置绑定关系中的录音状态
+
+ |
+|OutId|String|否|abcdef|重新设置绑定关系中的OutId
+
+ |
 |PhoneNoA|String|否|150000000|设置绑定关系中的A号码，当**OperateType**指定为**updateNoA**时必填。
 
  |
@@ -65,7 +77,7 @@
 
  |
 
-## 返回参数 {#resultMapping .section}
+## 返回数据 {#resultMapping .section}
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
@@ -102,11 +114,10 @@ http(s)://[Endpoint]/?OperateType=updateNoA
 
 ``` {#xml_return_success_demo}
 <UpdateSubscriptionResponse>
-  <Message>OK</Message>
-  <RequestId>986BCB6D-C9BF-42F9-91CE-3A9901233D36</RequestId>
-  <Code>OK</Code>
+	  <Message>OK</Message>
+	  <RequestId>986BCB6D-C9BF-42F9-91CE-3A9901233D36</RequestId>
+	  <Code>OK</Code>
 </UpdateSubscriptionResponse>
-
 ```
 
 `JSON` 格式
@@ -121,5 +132,5 @@ http(s)://[Endpoint]/?OperateType=updateNoA
 
 ## 错误码 { .section}
 
-[查看本产品错误码](https://error-center.aliyun.com/status/product/Dyplsapi)
+访问[错误中心](https://error-center.aliyun.com/status/product/Dyplsapi)查看更多错误码。
 
