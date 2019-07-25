@@ -4,9 +4,9 @@
 
 AXN隐私号是为A号码分配一个专属的隐私号，任何号码N通过拨打X号码都可以转接到A。
 
-## 调试 {#apiExplorer .section}
+## 调试 {#api_explorer .section}
 
-前往【[API Explorer](https://api.aliyun.com/#product=Dyplsapi&api=BindAxn)】在线调试，API Explorer 提供在线调用 API、动态生成 SDK Example 代码和快速检索接口等能力，能显著降低使用云 API 的难度，强烈推荐使用。
+[您可以在OpenAPI Explorer中直接运行该接口，免去您计算签名的困扰。运行成功后，OpenAPI Explorer可以自动生成SDK代码示例。](https://api.aliyun.com/#product=Dyplsapi&api=BindAxn&type=RPC&version=2017-05-25)
 
 ## 请求参数 {#parameters .section}
 
@@ -27,6 +27,9 @@ AXN隐私号是为A号码分配一个专属的隐私号，任何号码N通过拨
 
  |
 |Action|String|否|BindAxn|系统规定参数。取值：**BindAxn**。
+
+ |
+|CallDisplayType|Integer|否|1|重置绑定关系中的号码显示逻辑，1：主被叫显示中间号码X；2：B/N侧号码呼叫时，给A侧号码显示B/N的真实号码；3：A侧号码呼叫时，给B/N侧号码显示真实号码。
 
  |
 |ExpectCity|String|否|上海|指定城市进行X号码的选号。
@@ -61,7 +64,7 @@ AXN隐私号是为A号码分配一个专属的隐私号，任何号码N通过拨
 
  |
 
-## 返回参数 {#resultMapping .section}
+## 返回数据 {#resultMapping .section}
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
@@ -80,13 +83,13 @@ AXN隐私号是为A号码分配一个专属的隐私号，任何号码N通过拨
 |SecretBindDTO| | |绑定成功后返回的结构体。
 
  |
-|└Extension|String|13100000000|分机号码。接口BindAxn不涉及分机号码，请忽略。
+|Extension|String|13100000000|分机号码。接口BindAxn不涉及分机号码，请忽略。
 
  |
-|└SecretNo|String|17000000000|隐私号码，即X号码。
+|SecretNo|String|17000000000|隐私号码，即X号码。
 
  |
-|└SubsId|String|1000000768798832|订购关系ID。
+|SubsId|String|1000000768798832|订购关系ID。
 
  |
 
@@ -109,16 +112,15 @@ http(s)://[Endpoint]/?Expiration=2019-09-05 12:00:00
 
 ``` {#xml_return_success_demo}
 <BindAxnResponse>
-  <Message>OK</Message>
-  <RequestId>F655A8D5-B967-440B-8683-DAD6FF8DE990</RequestId>
-  <Code>OK</Code>
-  <SecretBindDTO>
-    <Extension>13100000000</Extension>
-    <SecretNo>17000000000</SecretNo>
-    <SubsId>1000000768798832</SubsId>
-  </SecretBindDTO>
+	  <Message>OK</Message>
+	  <RequestId>F655A8D5-B967-440B-8683-DAD6FF8DE990</RequestId>
+	  <Code>OK</Code>
+	  <SecretBindDTO>
+		    <Extension>13100000000</Extension>
+		    <SecretNo>17000000000</SecretNo>
+		    <SubsId>1000000768798832</SubsId>
+	  </SecretBindDTO>
 </BindAxnResponse>
-
 ```
 
 `JSON` 格式
@@ -138,5 +140,5 @@ http(s)://[Endpoint]/?Expiration=2019-09-05 12:00:00
 
 ## 错误码 { .section}
 
-[查看本产品错误码](https://error-center.aliyun.com/status/product/Dyplsapi)
+访问[错误中心](https://error-center.aliyun.com/status/product/Dyplsapi)查看更多错误码。
 
