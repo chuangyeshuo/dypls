@@ -4,9 +4,9 @@
 
 添加AXN分机号码的绑定关系前，请先确定业务场景中AXN号码的A号码和N号码。例如A号码是客户，则X号码是为客户分配的隐私号，其他的任何号码拨打X号码+分机号码都会转接到A号码，A拨打X的时候回呼叫会转接到绑定时所传入的默认B号码。
 
-## 调试 {#apiExplorer .section}
+## 调试 {#api_explorer .section}
 
-前往【[API Explorer](https://api.aliyun.com/#product=Dyplsapi&api=BindAxnExtension)】在线调试，API Explorer 提供在线调用 API、动态生成 SDK Example 代码和快速检索接口等能力，能显著降低使用云 API 的难度，强烈推荐使用。
+[您可以在OpenAPI Explorer中直接运行该接口，免去您计算签名的困扰。运行成功后，OpenAPI Explorer可以自动生成SDK代码示例。](https://api.aliyun.com/#product=Dyplsapi&api=BindAxnExtension&type=RPC&version=2017-05-25)
 
 ## 请求参数 {#parameters .section}
 
@@ -27,6 +27,9 @@
 
  |
 |Action|String|否|BindAxnExtension|系统规定参数。取值：**BindAxnExtension**。
+
+ |
+|CallDisplayType|Integer|否|1|重置绑定关系中的号码显示逻辑，1：主被叫显示中间号码X；2：B/N侧号码呼叫时，给A侧号码显示B/N的真实号码；3：A侧号码呼叫时，给B/N侧号码显示真实号码。
 
  |
 |ExpectCity|String|否|北京|指定城市进行X号码的选号。
@@ -59,7 +62,7 @@
 
  |
 
-## 返回参数 {#resultMapping .section}
+## 返回数据 {#resultMapping .section}
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
@@ -78,13 +81,13 @@
 |SecretBindDTO| | |绑定成功后返回的结构体。
 
  |
-|└Extension|String|130|分机号码。
+|Extension|String|130|分机号码。
 
  |
-|└SecretNo|String|17000000000|隐私号码，即X号码。
+|SecretNo|String|17000000000|隐私号码，即X号码。
 
  |
-|└SubsId|String|1000000820000605|绑定关系ID。
+|SubsId|String|1000000820000605|绑定关系ID。
 
  |
 
@@ -107,16 +110,15 @@ http(s)://[Endpoint]/?Expiration=2019-09-05 12:00:00
 
 ``` {#xml_return_success_demo}
 <BindAxnExtensionResponse>
-  <Message>OK</Message>
-  <RequestId>9297B722-A016-43FB-B51A-E54050D9369D</RequestId>
-  <Code>OK</Code>
-  <SecretBindDTO>
-    <Extension>130</Extension>
-    <SecretNo>17000000000</SecretNo>
-    <SubsId>1000000820000605</SubsId>
-  </SecretBindDTO>
+	  <Message>OK</Message>
+	  <RequestId>9297B722-A016-43FB-B51A-E54050D9369D</RequestId>
+	  <Code>OK</Code>
+	  <SecretBindDTO>
+		    <Extension>130</Extension>
+		    <SecretNo>17000000000</SecretNo>
+		    <SubsId>1000000820000605</SubsId>
+	  </SecretBindDTO>
 </BindAxnExtensionResponse>
-
 ```
 
 `JSON` 格式
@@ -136,5 +138,5 @@ http(s)://[Endpoint]/?Expiration=2019-09-05 12:00:00
 
 ## 错误码 { .section}
 
-[查看本产品错误码](https://error-center.aliyun.com/status/product/Dyplsapi)
+访问[错误中心](https://error-center.aliyun.com/status/product/Dyplsapi)查看更多错误码。
 
