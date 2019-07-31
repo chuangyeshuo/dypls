@@ -1,12 +1,12 @@
-# CreateAxgGroup {#doc_api_1058879 .reference}
+# CreateAxgGroup {#doc_api_Dyplsapi_CreateAxgGroup .reference}
 
 调用接口CreateAxgGroup创建G号码组。
 
 在AXG号码绑定前，除了购买X号码以外，还必须创建一个G号码组，并在G号码组中添加号码。如果创建G号码组时没有同时添加号码，还可以调用**OperateAxgGroup**接口添加号码。
 
-## 调试 {#apiExplorer .section}
+## 调试 {#api_explorer .section}
 
-前往【[API Explorer](https://api.aliyun.com/#product=Dyplsapi&api=CreateAxgGroup)】在线调试，API Explorer 提供在线调用 API、动态生成 SDK Example 代码和快速检索接口等能力，能显著降低使用云 API 的难度，强烈推荐使用。
+[您可以在OpenAPI Explorer中直接运行该接口，免去您计算签名的困扰。运行成功后，OpenAPI Explorer可以自动生成SDK代码示例。](https://api.aliyun.com/#product=Dyplsapi&api=CreateAxgGroup&type=RPC&version=2017-05-25)
 
 ## 请求参数 {#parameters .section}
 
@@ -33,7 +33,7 @@
 
  |
 
-## 返回参数 {#resultMapping .section}
+## 返回数据 {#resultMapping .section}
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
@@ -70,12 +70,11 @@ http(s)://[Endpoint]/?PoolKey=FC123456
 
 ``` {#xml_return_success_demo}
 <CreateAxgGroupResponse>
-  <Message>OK</Message>
-  <RequestId>635C0FDA-9EBC-43D7-B368-9F583C08A126</RequestId>
-  <Code>OK</Code>
-  <GroupId>2000000000001</GroupId>
+	  <Message>OK</Message>
+	  <RequestId>635C0FDA-9EBC-43D7-B368-9F583C08A126</RequestId>
+	  <Code>OK</Code>
+	  <GroupId>2000000000001</GroupId>
 </CreateAxgGroupResponse>
-
 ```
 
 `JSON` 格式
@@ -91,5 +90,5 @@ http(s)://[Endpoint]/?PoolKey=FC123456
 
 ## 错误码 { .section}
 
-[查看本产品错误码](https://error-center.aliyun.com/status/product/Dyplsapi)
+访问[错误中心](https://error-center.aliyun.com/status/product/Dyplsapi)查看更多错误码。
 
