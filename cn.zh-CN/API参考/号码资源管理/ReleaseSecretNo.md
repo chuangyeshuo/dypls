@@ -1,4 +1,4 @@
-# ReleaseSecretNo {#doc_api_1102511 .reference}
+# ReleaseSecretNo {#doc_api_Dyplsapi_ReleaseSecretNo .reference}
 
 调用接口ReleaseSecretNo释放号码。
 
@@ -6,9 +6,9 @@
 
 **说明：** 释放号码之前，请先在[号码隐私保护控制台](https://dypls.console.aliyun.com/dypls.htm#/account)上查看该号码是否有绑定关系。号码无任何绑定关系时才能释放。
 
-## 调试 {#apiExplorer .section}
+## 调试 {#api_explorer .section}
 
-前往【[API Explorer](https://api.aliyun.com/#product=Dyplsapi&api=ReleaseSecretNo)】在线调试，API Explorer 提供在线调用 API、动态生成 SDK Example 代码和快速检索接口等能力，能显著降低使用云 API 的难度，强烈推荐使用。
+[您可以在OpenAPI Explorer中直接运行该接口，免去您计算签名的困扰。运行成功后，OpenAPI Explorer可以自动生成SDK代码示例。](https://api.aliyun.com/#product=Dyplsapi&api=ReleaseSecretNo&type=RPC&version=2017-05-25)
 
 ## 请求参数 {#parameters .section}
 
@@ -29,7 +29,7 @@
 
  |
 
-## 返回参数 {#resultMapping .section}
+## 返回数据 {#resultMapping .section}
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
@@ -64,11 +64,10 @@ http(s)://[Endpoint]/?PoolKey=FC123456
 
 ``` {#xml_return_success_demo}
 <ReleaseSecretNoResponse>
-  <Message>OK</Message>
-  <RequestId>986BCB6D-C9BF-42F9-91CE-3A9901233D36</RequestId>
-  <Code>OK</Code>
+	  <Message>OK</Message>
+	  <RequestId>986BCB6D-C9BF-42F9-91CE-3A9901233D36</RequestId>
+	  <Code>OK</Code>
 </ReleaseSecretNoResponse>
-
 ```
 
 `JSON` 格式
@@ -83,5 +82,5 @@ http(s)://[Endpoint]/?PoolKey=FC123456
 
 ## 错误码 { .section}
 
-[查看本产品错误码](https://error-center.aliyun.com/status/product/Dyplsapi)
+访问[错误中心](https://error-center.aliyun.com/status/product/Dyplsapi)查看更多错误码。
 
