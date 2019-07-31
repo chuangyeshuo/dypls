@@ -1,10 +1,10 @@
-# QuerySubscriptionDetail {#doc_api_1104786 .reference}
+# QuerySubscriptionDetail {#doc_api_Dyplsapi_QuerySubscriptionDetail .reference}
 
 调用接口QuerySubscriptionDetail查询号码的绑定关系。
 
-## 调试 {#apiExplorer .section}
+## 调试 {#api_explorer .section}
 
-前往【[API Explorer](https://api.aliyun.com/#product=Dyplsapi&api=QuerySubscriptionDetail)】在线调试，API Explorer 提供在线调用 API、动态生成 SDK Example 代码和快速检索接口等能力，能显著降低使用云 API 的难度，强烈推荐使用。
+[您可以在OpenAPI Explorer中直接运行该接口，免去您计算签名的困扰。运行成功后，OpenAPI Explorer可以自动生成SDK代码示例。](https://api.aliyun.com/#product=Dyplsapi&api=QuerySubscriptionDetail&type=RPC&version=2017-05-25)
 
 ## 请求参数 {#parameters .section}
 
@@ -33,7 +33,7 @@
 
  |
 
-## 返回参数 {#resultMapping .section}
+## 返回数据 {#resultMapping .section}
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
@@ -52,7 +52,7 @@
 |SecretBindDetailDTO| | |接口调用成功后返回的结构体。
 
  |
-|└CallRestrict|String|CONTROL\_BX\_DISABLE|单通呼叫限制的状态。如果没有设置单通呼叫限制，则不返回该参数。
+|CallRestrict|String|CONTROL\_BX\_DISABLE|单通呼叫限制的状态。如果没有设置单通呼叫限制，则不返回该参数。
 
  其中：
 
@@ -60,31 +60,31 @@
 -   **CONTROL\_BX\_DISABLE**：B号码无法呼叫X号码。
 
  |
-|└ExpireDate|String|2019-09-05 12:00:00|绑定关系的过期时间。
+|ExpireDate|String|2019-09-05 12:00:00|绑定关系的过期时间。
 
  |
-|└Extension|String|130|AXG分机号中的分机号码。
+|Extension|String|130|AXG分机号中的分机号码。
 
  |
-|└GmtCreate|String|2019-03-05 12:00:00|绑定关系的创建时间。
+|GmtCreate|String|2019-03-05 12:00:00|绑定关系的创建时间。
 
  |
-|└GroupId|Long|2000000130001|绑定关系中的G号码组ID，即GID。
+|GroupId|Long|2000000130001|绑定关系中的G号码组ID，即GID。
 
  |
-|└NeedRecord|Boolean|true|是否设置了对该绑定关系产生的所有通话录制通话录音。
+|NeedRecord|Boolean|true|是否设置了对该绑定关系产生的所有通话录制通话录音。
 
  |
-|└PhoneNoA|String|15000000000|绑定关系中的A号码。
+|PhoneNoA|String|15000000000|绑定关系中的A号码。
 
  |
-|└PhoneNoB|String|15000000001|绑定关系中的B号码。
+|PhoneNoB|String|15000000001|绑定关系中的B号码。
 
  |
-|└PhoneNoX|String|17000000000|绑定关系中的隐私号码，即X号码。
+|PhoneNoX|String|17000000000|绑定关系中的隐私号码，即X号码。
 
  |
-|└Status|Long|1|该绑定关系的状态。
+|Status|Long|1|该绑定关系的状态。
 
  其中：
 
@@ -92,7 +92,7 @@
 -   1：生效中。
 
  |
-|└SubsId|String|1000000768798832|绑定关系ID。
+|SubsId|String|1000000768798832|绑定关系ID。
 
  |
 
@@ -114,21 +114,20 @@ http(s)://[Endpoint]/?PhoneNoX=17000000000
 
 ``` {#xml_return_success_demo}
 <QuerySubscriptionDetailResponse>
-  <Message>OK</Message>
-  <RequestId>066E6E47-04CB-4774-A976-4F73CB76D4A3</RequestId>
-  <SecretBindDetailDTO>
-    <Status>1</Status>
-    <ExpireDate>2019-09-05 12:00:00</ExpireDate>
-    <PhoneNoX>17000000000</PhoneNoX>
-    <NeedRecord>false</NeedRecord>
-    <PhoneNoB>15000000001</PhoneNoB>
-    <PhoneNoA>15000000000</PhoneNoA>
-    <SubsId>1000000768798832</SubsId>
-    <GmtCreate>2019-03-02 19:30:11</GmtCreate>
-  </SecretBindDetailDTO>
-  <Code>OK</Code>
+	  <Message>OK</Message>
+	  <RequestId>066E6E47-04CB-4774-A976-4F73CB76D4A3</RequestId>
+	  <SecretBindDetailDTO>
+		    <Status>1</Status>
+		    <ExpireDate>2019-09-05 12:00:00</ExpireDate>
+		    <PhoneNoX>17000000000</PhoneNoX>
+		    <NeedRecord>false</NeedRecord>
+		    <PhoneNoB>15000000001</PhoneNoB>
+		    <PhoneNoA>15000000000</PhoneNoA>
+		    <SubsId>1000000768798832</SubsId>
+		    <GmtCreate>2019-03-02 19:30:11</GmtCreate>
+	  </SecretBindDetailDTO>
+	  <Code>OK</Code>
 </QuerySubscriptionDetailResponse>
-
 ```
 
 `JSON` 格式
@@ -153,5 +152,5 @@ http(s)://[Endpoint]/?PhoneNoX=17000000000
 
 ## 错误码 { .section}
 
-[查看本产品错误码](https://error-center.aliyun.com/status/product/Dyplsapi)
+访问[错误中心](https://error-center.aliyun.com/status/product/Dyplsapi)查看更多错误码。
 
