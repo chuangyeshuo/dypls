@@ -4,9 +4,9 @@
 
 购买号码时，指定归属地如果没有足够号码可供购买，会造成号码购买失败。调用接口BuySecretNo购买号码前，请先通过接口QuerySecretNoRemain查询线上可购号码余量。
 
-## 调试 {#apiExplorer .section}
+## 调试 {#api_explorer .section}
 
-前往【[API Explorer](https://api.aliyun.com/#product=Dyplsapi&api=QuerySecretNoRemain)】在线调试，API Explorer 提供在线调用 API、动态生成 SDK Example 代码和快速检索接口等能力，能显著降低使用云 API 的难度，强烈推荐使用。
+[您可以在OpenAPI Explorer中直接运行该接口，免去您计算签名的困扰。运行成功后，OpenAPI Explorer可以自动生成SDK代码示例。](https://api.aliyun.com/#product=Dyplsapi&api=QuerySecretNoRemain&type=RPC&version=2017-05-25)
 
 ## 请求参数 {#parameters .section}
 
@@ -46,7 +46,7 @@
 
  |
 
-## 返回参数 {#resultMapping .section}
+## 返回数据 {#resultMapping .section}
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
@@ -65,19 +65,19 @@
 |SecretRemainDTO| | |接口调用成功后返回的结构体。
 
  |
-|└Amount|Long|0|可购号码余量。
+|Amount|Long|0|可购号码余量。
 
  |
-|└City|String|杭州|号码的归属地。
+|City|String|杭州|号码的归属地。
 
  |
-|└RemainDTOList| | |【全国列表】模式下，接口调用成功后返回的结构体。
+|RemainDTOList| | |可购号码余量列表。
 
  |
-|└Amount|Long|5|可购号码余量。
+|Amount|Long|120|可购号码余量。
 
  |
-|└City|String|北京|可购号码城市。
+|City|String|武汉|号码的归属地。
 
  |
 
@@ -98,16 +98,15 @@ http(s)://[Endpoint]/?City=杭州
 `XML` 格式
 
 ``` {#xml_return_success_demo}
-<QuerySecretNoRemainResponse>
-  <SecretRemainDTO>
-    <Amount>0</Amount>
-    <City>杭州</City>
-  </SecretRemainDTO>
-  <Message>OK</Message>
-  <RequestId>9FC30594-3841-43AD-9008-03393BCB5CD2</RequestId>
-  <Code>OK</Code>
+<QuerySecretNoRemainResponse>	
+      <SecretRemainDTO>
+		    <Amount>0</Amount>
+		    <City>杭州</City>
+	  </SecretRemainDTO>
+	  <Message>OK</Message>
+	  <RequestId>9FC30594-3841-43AD-9008-03393BCB5CD2</RequestId>
+	  <Code>OK</Code>
 </QuerySecretNoRemainResponse>
-
 ```
 
 `JSON` 格式
@@ -126,5 +125,5 @@ http(s)://[Endpoint]/?City=杭州
 
 ## 错误码 { .section}
 
-[查看本产品错误码](https://error-center.aliyun.com/status/product/Dyplsapi)
+访问[错误中心](https://error-center.aliyun.com/status/product/Dyplsapi)查看更多错误码。
 
